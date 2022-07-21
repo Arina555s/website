@@ -149,6 +149,11 @@ h6 {
   }
 }
 
+.column-menulist__span,
+.popup__name-title {
+  text-decoration: underline !important;
+}
+
 .info {
   color: #0A3436;
   position: relative;
@@ -3278,6 +3283,11 @@ body::after {
 }
 
 @media (any-hover: hover) {
+  .column-menulist__span:hover,
+  .popup__name-title:hover {
+    cursor: pointer;
+  }
+
   .info__main__btn:hover {
     background-color: #eb4025;
   }
