@@ -157,6 +157,41 @@ h6 {
   text-decoration: underline !important;
 }
 
+.see-websites {
+  padding-top: 8px;
+  text-decoration: underline !important;
+}
+
+img.rot {
+  -webkit-animation: 5s linear 0s normal none infinite running rot;
+          animation: 5s linear 0s normal none infinite running rot;
+  width: 100px;
+}
+
+@keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .info {
   color: #0A3436;
   position: relative;
@@ -353,7 +388,7 @@ h6 {
 }
 
 .info__main__sublist {
-  line-height: 1.3888888889;
+  line-height: 1.4444444444;
 }
 
 .sublist-first {
@@ -495,15 +530,15 @@ h6 {
           flex: 0 1 33.333%;
 }
 
-@supports (font-size: clamp( 0.875rem , 0.8157407407rem  +  0.2962962963vw , 1.125rem )) {
+@supports (font-size: clamp( 0.9375rem , 0.8930555556rem  +  0.2222222222vw , 1.125rem )) {
   .column-menulist__column {
-    font-size: clamp( 0.875rem , 0.8157407407rem  +  0.2962962963vw , 1.125rem );
+    font-size: clamp( 0.9375rem , 0.8930555556rem  +  0.2222222222vw , 1.125rem );
   }
 }
 
-@supports not (font-size: clamp( 0.875rem , 0.8157407407rem  +  0.2962962963vw , 1.125rem )) {
+@supports not (font-size: clamp( 0.9375rem , 0.8930555556rem  +  0.2222222222vw , 1.125rem )) {
   .column-menulist__column {
-    font-size: calc(0.875rem + 0.25 * (100vw - 20rem) / 84.375);
+    font-size: calc(0.9375rem + 0.1875 * (100vw - 20rem) / 84.375);
   }
 }
 
@@ -635,7 +670,7 @@ h6 {
 
 .work__row-text {
   max-width: 46.875rem;
-  line-height: 1.2777777778;
+  line-height: 1.5;
 }
 
 @supports (font-size: clamp( 0.875rem , 0.8157407407rem  +  0.2962962963vw , 1.125rem )) {
@@ -668,7 +703,7 @@ h6 {
 }
 
 .row-work__link {
-  line-height: 1.2777777778;
+  line-height: 1.4444444444;
   list-style-type: square;
 }
 
@@ -848,7 +883,8 @@ h6 {
 
 .top-qalifiti__text {
   max-width: 835px;
-  line-height: 1.3888888889;
+  padding-top: 5px;
+  line-height: 1.5555555556;
 }
 
 @supports (padding-left: clamp( 0.0000000625rem , -0.6666665894rem  +  3.3333332593vw , 2.8125rem )) {
@@ -899,19 +935,20 @@ h6 {
   }
 }
 
-@supports (padding-bottom: clamp( 0.9375rem , 0.8930555556rem  +  0.2222222222vw , 1.125rem )) {
+@supports (padding-bottom: clamp( 1.125rem , 1.2796296296rem  +  -0.1481481481vw , 1.25rem )) {
   .bottom-qalifiti__title {
-    padding-bottom: clamp( 0.9375rem , 0.8930555556rem  +  0.2222222222vw , 1.125rem );
+    padding-bottom: clamp( 1.125rem , 1.2796296296rem  +  -0.1481481481vw , 1.25rem );
   }
 }
 
-@supports not (padding-bottom: clamp( 0.9375rem , 0.8930555556rem  +  0.2222222222vw , 1.125rem )) {
+@supports not (padding-bottom: clamp( 1.125rem , 1.2796296296rem  +  -0.1481481481vw , 1.25rem )) {
   .bottom-qalifiti__title {
-    padding-bottom: calc(0.9375rem + 0.1875 * (100vw - 20rem) / 84.375);
+    padding-bottom: calc(1.25rem + -0.125 * (100vw - 20rem) / 84.375);
   }
 }
 
 .bottom-qalifiti__subtitle {
+  line-height: 1.5;
   text-decoration: underline;
 }
 
@@ -933,7 +970,7 @@ h6 {
 }
 
 .bottom-qalifiti__subtitle-dop {
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 @supports (padding-bottom: clamp( 0.9375rem , 0.7152777778rem  +  1.1111111111vw , 1.875rem )) {
@@ -1214,18 +1251,18 @@ h6 {
 }
 
 .plan__link {
-  line-height: 1.3888888889;
+  line-height: 1.5;
 }
 
-@supports (padding-top: clamp( 0.625rem , 0.3287037037rem  +  1.4814814815vw , 1.875rem )) {
+@supports (padding-top: clamp( 0.8125rem , 0.5606481481rem  +  1.2592592593vw , 1.875rem )) {
   .plan__link {
-    padding-top: clamp( 0.625rem , 0.3287037037rem  +  1.4814814815vw , 1.875rem );
+    padding-top: clamp( 0.8125rem , 0.5606481481rem  +  1.2592592593vw , 1.875rem );
   }
 }
 
-@supports not (padding-top: clamp( 0.625rem , 0.3287037037rem  +  1.4814814815vw , 1.875rem )) {
+@supports not (padding-top: clamp( 0.8125rem , 0.5606481481rem  +  1.2592592593vw , 1.875rem )) {
   .plan__link {
-    padding-top: calc(0.625rem + 1.25 * (100vw - 20rem) / 84.375);
+    padding-top: calc(0.8125rem + 1.0625 * (100vw - 20rem) / 84.375);
   }
 }
 
@@ -1534,6 +1571,10 @@ body::after {
   .about__title {
     margin-bottom: calc(0.9375rem + 0.625 * (100vw - 20rem) / 84.375);
   }
+}
+
+.about__text {
+  line-height: 1.4444444444;
 }
 
 @supports (font-size: clamp( 1rem , 0.9703703704rem  +  0.1481481481vw , 1.125rem )) {
@@ -3055,7 +3096,7 @@ body::after {
 
   .column-sotial {
     position: absolute;
-    top: 25px;
+    top: 30px;
     padding: 15px;
     background-color: #fffefe;
     border: 1px solid rgb(220, 220, 220);
@@ -3066,15 +3107,15 @@ body::after {
     text-decoration: none;
   }
 
-@supports ( padding-right: clamp( 0.0000000625rem , -1.0370369597rem  +  5.1851851111vw , 4.375rem )) {
+@supports ( padding-right: clamp( 0.0000000625rem , -19.6874996563rem  +  34.9999995vw , 4.375rem )) {
     .colunm-top {
-      padding-right: clamp( 0.0000000625rem , -1.0370369597rem  +  5.1851851111vw , 4.375rem );
+      padding-right: clamp( 0.0000000625rem , -19.6874996563rem  +  34.9999995vw , 4.375rem );
     }
 }
 
-@supports not ( padding-right: clamp( 0.0000000625rem , -1.0370369597rem  +  5.1851851111vw , 4.375rem )) {
+@supports not ( padding-right: clamp( 0.0000000625rem , -19.6874996563rem  +  34.9999995vw , 4.375rem )) {
     .colunm-top {
-      padding-right: calc(0.0000000625rem + 4.3749999375 * (100vw - 20rem) / 84.375);
+      padding-right: calc(0.0000000625rem + 4.3749999375 * (100vw - 56.25rem) / 12.5);
     }
 }
 
@@ -3252,7 +3293,7 @@ body::after {
   }
 
   .column-sotial {
-    right: -170%;
+    right: -210%;
   }
 
   .footer__box {
@@ -3270,6 +3311,10 @@ body::after {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+
+  .footer__column-middle {
+    margin-right: 15px;
   }
 
   .footer__list {
