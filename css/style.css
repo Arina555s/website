@@ -2026,6 +2026,10 @@ body::after {
   position: relative;
 }
 
+.link-sotial-full {
+  padding-right: 0 !important;
+}
+
 .header-menu__link {
   font-family: "Poiret One";
   -webkit-transition: color 0.2s ease 0s;
