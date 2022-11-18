@@ -1,7 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Jura:300,regular);
+
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Jura:300,regular');
-
-
 
 @font-face {
   font-family: Cheque;
@@ -3282,7 +3281,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .swiper-pagination-bullet-active {
-    margin: 0 35px !important;
+    margin: 0 25px !important;
   }
 
   .swiper-pagination-bullet-active::before {
