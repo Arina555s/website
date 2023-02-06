@@ -2880,7 +2880,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 @media (min-width: 47.99875em) {
   .popup__text-second-part {
-    width: 190px;
+    min-width: 190px;
   }
 
 @supports (height: clamp( 10.625rem , 9.0667177914rem  +  7.7914110429vw , 18.5625rem )) {
